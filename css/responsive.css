@@ -1,23 +1,27 @@
 /* mobile responsive style */
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 480px) {
     /* header design start */
-    header{
+    .header{
         width: 100%;
         background-color: #2D25A0;
         height: auto;
     }
     .checkbtn{
         display: block;
-        margin-left: 30px;
     }
     /* navber style start */
     .navbar{
-        width: 100%;
+        width: 90%;
+        padding-top: 20px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .menu{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: 300px;
         background-color: #2D25A0;
         justify-content: space-evenly;
@@ -30,86 +34,151 @@
     #check:checked ~ .menu{
         left: 0;
     }
-    /* navber style end */
-    /* about style start */
-    .about{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .about_info{
-        width: 600px;
-        height: auto;
+    .login a{
+        width: 90px;
+        height: 32px;
+        font-size: 11px;
+        font-weight: 500;
+        background-color: #E02C6D;
+        padding: 10px 20px;
+        text-decoration: none;
         color: #FFFFFF;
+        text-align: center;
     }
-    .about_img img{
-        margin-top: 50px;
-        width: 556px;
-        height: 438px;
+    .login a i{
+        margin-right: 8px;
     }
-    /* about style end */
-    /* player style start */
-    .player-container{
-        width: 400px;
-        height: auto;
-    }
-    .players{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    /* player style end */
-    /* news style start */
-    .football_news_container{
-        width: 100%;
-        height: 900px;
-    }
-    .football_news_container h2{
-        margin-left: 30px;
-    }
-    .football_news{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .main_news{
-        width: 500px;
-        margin-bottom: 50px;
-    }
-    .other_news{
-        width: 650px;
-        grid-template-columns: repeat(2, 300px);
-        grid-column-gap: 20px;
-    }
-    /* news style end */
-    /* highlight style start */
-    .highlight_container{
+    .about{
         width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
         margin-top: 0px;
     }
-    .highlight_body{
-        grid-template-columns: repeat(1, 340px);
-        margin-left: 25px;
+    .about_info{
+        width: 80%;
+    }
+    .about_info h1{
+        font-size: 40px;
+    }
+    .about_img img{
+        width: 90%;
+        height: 260px;
+        margin-left: 5%;
+    }
+    .player-container{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
-    }   
-    /* highlight style end */
-    /* subscribe style start */
+    }
+    .player{
+        width: 100%;
+    }
+    .player img{
+        width:90%;
+        height: 250px;
+    }
+    .player_info{
+        width: 90%;
+        height: 150px;
+    }
+    .football_news_container{
+        width: 90%;
+        height: 1230px;
+    }
+    .football_news_container h2{
+        font-size: 18px;
+    }
+    .football_news{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .main_news{
+        width: 100%;
+    }
+    .main_img img{
+        width: 100%;
+        height: 250px;
+        border-radius: 5px; 
+    }
+    .main_news_info{
+        width: 95%;
+        height: 140px;
+        color: #18191F
+    }
+    .main_news_info h3{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .other_news{
+        width: 90%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+    }
+    .highlight_container{
+        width: 90%;
+        margin: 40px 0;
+        margin-bottom: 70px;
+    }
+    .highlight_body{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+    .highlight_info{
+        width: 100%;
+        height: 330px;
+    }
+    .highlight_info h1{
+        font-size: 36px;
+        font-weight: 700;
+        color: #0A0826;
+    }
+    .highlight_img img{
+        width: 100%;
+        border-radius: 10px;
+    }
     .subscribe_container{
         width: 100%;
+        background-color: #2D25A0;
+        height: auto;
+        margin-bottom: 70px;
     } 
     .subscribe_head{
-        margin-left: 30px;
+        width: 70%;
+        font-size: 18px;
+        background-color: #E02C6D;
+    }
+    .subscribe_body{
+        width: 80%;
+    }
+    .subscribe_body h2{
+        font-size: 16px;
+    }
+    .subscribe_body input{
+        display: block;
+        width: 70%;
+    }
+    .subscribe_body a{
+        display: block;
+        margin-top: 30px;
+        height: 24px;
+        padding: 10px 0px;
     }
     .subscribe_body p{
-        margin-right: 30px;
+        width: 100%;
     }
     .footer_container{
-      width: 100%;
+        width: 90%;
+    }
+    .footer_img img{
+        width: 100%;
+        height: 90px;
     }
 }
-/* tablet responsive style */
