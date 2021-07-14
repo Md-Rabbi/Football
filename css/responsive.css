@@ -77,6 +77,11 @@
     .player{
         width: 100%;
     }
+    .player_img{
+        width: 100%;
+        height: 250px;
+        margin-left: 10%;
+    }
     .player img{
         width:90%;
         height: 250px;
@@ -91,6 +96,7 @@
     }
     .football_news_container h2{
         font-size: 18px;
+        width: 130px;
     }
     .football_news{
         display: grid;
