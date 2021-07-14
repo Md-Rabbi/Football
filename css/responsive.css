@@ -1,18 +1,25 @@
 /* mobile responsive style */
 @media only screen and (max-width: 688px) {
+    /* header design start */
     header{
         width: 100%;
-        height: 1200px;
         background-color: #2D25A0;
+        height: auto;
     }
     .checkbtn{
         display: block;
+        margin-left: 30px;
+    }
+    /* navber style start */
+    .navbar{
+        width: 100%;
     }
     .menu{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 300px;
+        background-color: #2D25A0;
         justify-content: space-evenly;
         align-items: center;
         position: fixed;
@@ -23,22 +30,86 @@
     #check:checked ~ .menu{
         left: 0;
     }
+    /* navber style end */
+    /* about style start */
     .about{
         width: 100%;
-        height: 1000px;
-        background-color: red;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
     .about_info{
-        width: 100%;
+        width: 600px;
+        height: auto;
         color: #FFFFFF;
     }
     .about_img img{
+        margin-top: 50px;
         width: 556px;
         height: 438px;
+    }
+    /* about style end */
+    /* player style start */
+    .player-container{
+        width: 400px;
+        height: auto;
+    }
+    .players{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* player style end */
+    /* news style start */
+    .football_news_container{
+        width: 100%;
+        height: 900px;
+    }
+    .football_news_container h2{
+        margin-left: 30px;
+    }
+    .football_news{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main_news{
+        width: 500px;
+        margin-bottom: 50px;
+    }
+    .other_news{
+        width: 650px;
+        grid-template-columns: repeat(2, 300px);
+        grid-column-gap: 20px;
+    }
+    /* news style end */
+    /* highlight style start */
+    .highlight_container{
+        width: 90%;
+        margin-top: 0px;
+    }
+    .highlight_body{
+        grid-template-columns: repeat(1, 340px);
+        margin-left: 25px;
+        grid-row-gap: 30px;
+    }   
+    /* highlight style end */
+    /* subscribe style start */
+    .subscribe_container{
+        width: 100%;
+    } 
+    .subscribe_head{
+        margin-left: 30px;
+    }
+    .subscribe_body p{
+        margin-right: 30px;
+    }
+    .footer_container{
+      width: 100%;
     }
 }
 /* tablet responsive style */

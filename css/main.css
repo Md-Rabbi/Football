@@ -69,7 +69,7 @@ header{
 .about{
     width: 1145px;
     display: grid;
-    grid-template-columns: 485px 556px;
+     grid-template-columns: 485px 556px;
     grid-column-gap: 105px;
     margin: 0 auto;
     margin-top: 50px;
